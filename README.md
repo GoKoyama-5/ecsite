@@ -1,4 +1,4 @@
-# ecsite
+# README
 
 ## php関連のコマンドを使用する場合は下記のコマンドでコンテナ内に入ってから実行を行う
 - docker exec -it コンテナ名 bash <br>
