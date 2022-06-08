@@ -12,6 +12,12 @@ RUN curl -sS https://getcomposer.org/installer | php \
   && mv composer.phar /usr/local/bin/composer \
   && chmod +x /usr/local/bin/composer
 
+# Node.jsをインストール
+RUN curl -sL https://deb.nodesource.com/setup_12.x | bash -
+RUN apt-get install -y nodejs
+RUN npm install npm@latest -g
+
+
 WORKDIR /var/www/html
 
 ENV COMPOSER_ALLOW_SUPERUSER 1
